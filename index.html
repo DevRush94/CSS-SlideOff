@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Sleek Slider</title>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ </head>
+
+ <body>
+  <div class="ovh w100p h100vh">
+   <div class="main ff" id="maindiv">
+    <div class="slide slide1">
+     <div class="illustrations">
+      <img src="undraw_nature_on_screen_xkli.svg" alt="Nature on Screen">
+     </div>
+     <div class="description">Instead of <span class="ff2">Enjoying</span> Nature on a silly <snapn class="ff2">Screen</snapn> you can do is ...</div>
+     <div class="showmore" id="trigger"></div>
+    </div>
+    <div class="slide slide2">
+     <div class="illustrations">
+      <img src="undraw_walking_outside_5ueb.svg" alt="Enjoy nature">
+     </div>
+     <div class="description">Go and <span class="ff2">Feel</span> the <span class="ff2">Refreshing</span> Lovely Nature ...</div>
+    </div>
+   </div>
+  </div>
+ </body>
+ <script>
+
+  var maindiv = document.getElementById('maindiv');
+  var trigger = document.getElementById('trigger');
+
+  trigger.addEventListener('click', function (e) {
+   e.preventDefault();
+   maindiv.classList.toggle('slide_move');
+  });
+ </script>
+
+</html>
